@@ -332,11 +332,11 @@ exports.detail = async function (req, res) {
 
     const chapter = [];
 
-    $('#Chapter ._3Rsjq tr:gt(1)').each((index, element) => {
+    $('#Chapter ._3Rsjq tr:gt(0)').each((index, element) => {
         const value = $(element).children('.judulseries').text().trim();
         const value2 = $(element).children('.tanggalseries').text().trim();
         const value3 = $(element).children('.judulseries').children('a').attr('href');
-
+        console.log(value3);
         const obj = {
             "chapter": value,
             "tanggal": value2,

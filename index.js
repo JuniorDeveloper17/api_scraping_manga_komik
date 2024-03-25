@@ -10,6 +10,6 @@ app.use(express.urlencoded({extended: true}));
 const routes = require('./routes');
 routes(app);
 
-app.listen(process.env.PORT, ()=>{
+app.listen(3001, ()=>{
     console.log('server starting');
 });
